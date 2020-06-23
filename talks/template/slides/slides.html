@@ -1,0 +1,167 @@
+<section>
+
+<h1>template</h1>
+
+<p>John Smith</p>
+
+</section>
+<section>
+
+<h2>スライドの作り方</h2>
+
+</section>
+<section>
+
+<h3>書き方</h3>
+
+<p><code>slides.md</code> に一般的な<br>
+マークダウン記法で記述します。</p>
+
+<p>スライドのタイトルやスタイルなどの設定は<br>
+<code>config.yml</code> に記述します。</p>
+
+</section>
+<section>
+<section>
+
+<h3>特殊なマークダウン記法</h3>
+
+<p>以下のようなスライド用の<br>
+特殊なマークダウン記法が利用可能です。</p>
+
+<ul>
+  <li>改ページ</li>
+  <li>縦スライド</li>
+  <li>発表者ノート</li>
+</ul>
+
+<p>詳細は下のページに。</p>
+
+</section>
+<section>
+
+<h3>改ページ</h3>
+
+<p>通常の改ページは <code>---</code> です。</p>
+
+<hr>
+
+<p>水平バーは <code>----</code> で挿入可能です。</p>
+
+</section>
+<section>
+
+<h3>縦スライド</h3>
+
+<p>改ページとして <code>***</code> を使用すると、<br>
+次に <code>***</code> で改ページを行うまで、<br>
+改ページを行うごとに縦にページを追加します。</p>
+
+</section>
+<section>
+
+<h3>発表者ノート</h3>
+
+<p>次のように発表者ノートを記述することができます。</p>
+
+<pre>
+  ```note
+  あんなことやこんなことを話す。
+  ```
+</pre>
+
+<p>発表者ノートはスライド上で s キーを押して<br>
+speaker note view に切り替えると表示されます。</p>
+
+<aside class="notes">
+
+<p>あんなことやこんなことを話す。</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+
+<h3>スライドの生成方法</h3>
+
+<pre><code class="language-shell">cd /path/to/slides.md/directory
+reveal-ck generate
+</code></pre>
+
+<p>上記のコマンドで <code>slides.md</code> と <code>config.yml</code> から<br>
+slides ディレクトリ以下にスライドを生成します。</p>
+
+<p>いずれかのファイルを更新したら<br>
+上記のコマンドでスライドを生成し直してください。</p>
+
+</section>
+<section>
+
+<h3>プレビュー</h3>
+
+<pre><code class="language-shell">reveal-ck serve
+</code></pre>
+
+<p>上記のコマンドでブラウザで<a href="http://localhost:10000">プレビュー</a>できます。</p>
+
+<p><code>slides.md</code> の変更は即座に反映されますが、<br>
+<code>config.yml</code> を変更した場合は一旦止めて<br>
+<code>reveal-ck generate</code> し直してください。</p>
+
+</section>
+<section>
+
+<h2>スライドの操作方法</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>?</td>
+      <td>show help</td>
+    </tr>
+    <tr>
+      <td>cursor</td>
+      <td>move page</td>
+    </tr>
+    <tr>
+      <td>s</td>
+      <td>open speaker note view</td>
+    </tr>
+    <tr>
+      <td>ESC</td>
+      <td>overview</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>fullscreen</td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+<section>
+
+<h2>スライドの公開方法</h2>
+
+<p>スライドのディレクトリごと<br>
+master ブランチへ追加するだけで<br>
+GitHub Pages で直接閲覧可能になります。</p>
+
+</section>
+<section>
+
+<h2>Appendix</h2>
+
+<ul>
+  <li><a href="https://revealjs.com/">reveal.js</a></li>
+  <li><a href="http://jedcn.github.io/reveal-ck/">reveal-ck</a></li>
+</ul>
+
+</section>

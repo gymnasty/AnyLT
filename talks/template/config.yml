@@ -1,0 +1,27 @@
+title: "タイトル"
+author: "作者名"
+
+# Choose from "black", "white", "league", "beige", "sky",
+# "night", "serif", "simple", "solarized", "blood" and "moon".
+# https://revealjs.com/themes/
+theme: "sky"
+
+# Choose from "none", "fade", "slide", "convex", "concave" and "zoom".
+# https://revealjs.com/transitions/
+transition: "slide"
+
+revealjs_config:
+  controls: true
+  postgress: true
+  slideNumber: true
+  history: true
+  overview: true
+  enter: true
+  touch: false
+  loop: false
+  rtl: false
+  fragments: true
+  autoSlide: 0
+  autoSlideStoppable: false
+  mouseWheel: false
+  transitionSpeed: "fast"
