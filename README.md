@@ -4,7 +4,7 @@
 
 ## トーク一覧
 
-* [テンプレート](path/to/template)
+* [テンプレート](https://gymnasty.github.io/AnyLT/talks/template/slides/)
 
 ---
 
@@ -12,8 +12,8 @@
 
 ### 閲覧権限
 
-許可された github のユーザのみが閲覧可能です。
-心ゆくまで好きなようにスライドをお書きください。
+作成されたスライドは一般に公開されます。
+スライドの内容にはご注意ください。
 
 ### ブランチ運用
 
@@ -67,3 +67,11 @@ gem install reveal-ck
 `slides.md` を編集して保存するとプレビューがホットリロードされる。
 
 `config.yml` を変更した場合は `reveal-ck generate` からやり直す。
+
+## スライドの公開方法
+
+master ブランチにスライドのディレクトリをコミットして push するだけです。
+
+以下へアクセスするとスライドが表示されます。
+
+`https://gymnasty.github.io/AnyLT/talks/<名前>/<トピック名>/slides/`
